@@ -2,13 +2,17 @@
 #include "main.h"
 
 /**
-  * main - Calls the print_numbers function
-  *
-  * Return: 0 (Always success)
+  * print_numbers - Print numbers since 0 up to 9
+  * Return: The numbers since 0 up to 9
   */
 
-int main(void)
+	void print_numbers(void)
 {
-	print_numbers();
-	return (0);
+	int x;
+
+	for (x = 0; x <= 0; x++)
+	{
+	_putchar(x + '0');
+	}
+	_putchar('\n');
 }
