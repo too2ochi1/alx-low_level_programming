@@ -1,28 +1,18 @@
 #include "main.h"
-#include <stdio.h>
+/**
+ * print_chessboard - Entry point
+ * @a: array
+ * Return: Always 0 (Success)
+ */
+void print_chessboard(char (*a)[8])
+{
+	int i;
+	int j;
 
-void printChessboard() {
-    char board[8][8] = {
-        {'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'},
-        {'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
-        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-        {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
-        {'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
-        {'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'}
-    };
-
-    for (int row = 0; row < 8; row++) {
-        for (int col = 0; col < 8; col++) {
-            printf("%c ", board[row][col]);
-        }
-        printf("\n");
-    }
-}
-
-// Example usage
-int main() {
-    printChessboard();
-    return 0;
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+			_putchar(a[i][j]);
+		_putchar('\n');
+	}
 }
